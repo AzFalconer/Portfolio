@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Orbitron|Righteous|Exo|Mogra|Tangerine|Acme|OpenSans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {box-sizing: border-box;}
+body {padding: 2%;}
+a {text-decoration: none; transition: all .17s; color: #ff4e00;}
+p {font-size: 1.8vw;  font-family: 'OpenSans', serif;}
+ul {background-color: lightgrey; padding: 2% 5%;
+  a {color: navy;}
+}
+li {font-size: 2vw;}
+img {max-width: 100%;}
+.header {top:0px;font-family: 'Acme', serif; font-size: 5vw; text-shadow: 4px 4px 4px #aaa; text-align: center; display: flex; justify-content: space-between;}
+.colImg {flex-basis: 20%;}
+.colTitle {flex-basis: 78%; margin-top: 4vw;}
+.content {height: auto;margin: 180px auto;}
+.secHeader {font-family: 'Bitter', serif; font-size: 3vw;}
+.textWrapRight {float: right; margin-left: 2%;}
+.textWrapLeft {float: left; margin-right: 2%;}
+
+@media (min-width: 700px) {
+  .columnLayout {display: flex; justify-content: space-between;}
+}
+
+.col1 {flex-basis: 32%; background-color: #FFFFAA; padding: .5%;}
+.col2 {flex-basis: 32%; background-color: #C9DECB; padding: .5%;}
+.col3 {flex-basis: 32%; background-color: #FFCE73; padding: .5%;}
+div.tab {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #8C001A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(139, 0, 0,0.65),rgba(139, 0, 0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(139, 0, 0,0.65),rgba(139, 0, 0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(139, 0, 0,0.65),rgba(139, 0, 0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(139, 0, 0,0.65), rgba(139, 0, 0,1)); /*Standard*/
+}
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  transition: 0.3s;
+  font-family: 'Righteous', serif;
+  font-size: 3vw;
+}
+div.tab button:hover {background-color: #ddd;}

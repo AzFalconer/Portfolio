@@ -1,0 +1,58 @@
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type="text/javascript" src='main.js'></script>
+<head>
+  <link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+  <div id="top" class="header">
+      <div class="colImg" style="padding: 5px 5px 0px 5px;">
+        <img src="https://www.redtailbooks.com/codeCamp/images/bw.jpg" alt="handsome man" style="border-radius: 10px;"><br>
+        <a href="https://www.twitter.com"><img src="https://www.redtailbooks.com/codeCamp/images/twit.png" alt="twitter" style="width: calc(50% - .9vw); max-width: 60px;"></a>
+      <a href="https://www.facebook.com/Red-Tail-Books-134540379905075/"><img src="https://www.redtailbooks.com/codeCamp/images/fb.png" alt="facebook" style="width: calc(50% - .9vw); max-width: 60px;"></a>
+      <a href="https://github.com/AzFalconer"><img src="https://www.redtailbooks.com/codeCamp/images/gh.png" alt="github" style="width: calc(50% - .9vw); max-width: 60px;"></a>
+      <a href="mailto:code@darbymail.net"><img src="https://www.redtailbooks.com/codeCamp/images/mail.png" alt="e-mail" style="width: calc(50% - .9vw); max-width: 60px;"></a>
+      </div>
+      <div class="colTitle">
+        What do I do?<br>I drink and I know things.<br>That's what I do.
+      </div>
+        </div>
+  <div class="tab">
+    <a href="#bio"><button class="tablinks">Bio</button></a>
+    <a href="#portfolio"><button class="tablinks">Portfolio</button></a>
+    <a href="#contact"><button class="tablinks" onclick="#contact">Contact</button></a>
+  </div>
+
+    <p id="bio" class="secHeader">Bio ~</p><p>Hi, my name is David Darby. I'm a world traveling, bookstore owning, falconer, who is really good at bar trivia. And I code for fun.</p>
+    <p>I started coding when I got my <a href="http://www.8-bitcentral.com/atari/xlSeries.html">Atari 800XL</a> in 1984. I mowed lawns all summer to raise the money for it. The good old days when you could write a whole game in just 16K chunks, now that was real programming. My first and only paid coding job (since then I've just coded for friends, family or local non-profits/small business...) was dBase III. Boy that was a long time ago...</p>
+  <img src="https://www.redtailbooks.com/codeCamp/images/sonja.jpg" alt="falconer" class="textWrapLeft" style="width: 20%; max-width: 300px;"><p>I would like to get a job coding, but with no formal education or certifications, I decided to give freeCodeCamp a try. I'm still getting used to using codepen, as I prefer to write html using notepad or in production using nano (ready for the vim flamers...3...2...1) I mostly work in the production environment, working off line is for the weak. :) And did I mention there is a thin line between bravery and stupidity? Really I only work in production on my own sites/apps, when working for someone else I work offline.</p><img src="https://www.redtailbooks.com/codeCamp/images/tower.jpg" alt="falconer" class="textWrapRight" style="width: 20%; max-width: 200px;">
+  <p>Application Programming - In my bookstore, I have written (and continuously upgrade) two programs: a POS (Point of Sale) and an Inventory Control app. Both are written in VB.net using Visual Studio (Don't be a hater, VB works fine for Window's Form Apps.) Both programs utilize a thermal receipt printer and a bar code scanner. Also I have a little VB app that uses a webcam to take a series of 3 pics (1 sec apart) when someone uses a credit card. Never had a cc complaint, but I have pics if I ever do...</p>
+
+  <p>Web site design - I have created a few websites over the years for myself and others. Currently I only manage one website <a href="https://mypaperback.com">myPaperBacks.com</a> for the bookstore. Oh and there is a <a href="http://mypaperbacks.com/mobile/mobile.php">mobile</a> version also. I really believe in efficiency so I keep my html pretty lean. Give <a href="https://gtmetrix.com">gtmetrix</a> a try if you want to test your own website(s). I utilize php for server side scripting. If I can't score in the high 90% I consider that a failure. Since I taught my self html, mostly looking at the source code for websites I liked, I'm sure I've developed some bad habits. For example I'm trying really hard not to use tables for layout in this course... But tables are so much easier! (Yes, I know it is bad form...)</p>
+  <p>Server - I run my own e-mail server and webserver on digital ocean droplets. Both servers run Ubuntu 14.04, and the webserver is Apache. (FYI, that was bad security hygiene... The web doesn't need to know where you host and/or what OS & software you run.) Most people advise against running your own e-mail server, but I enjoy it. Also I stood the e-mail server up in Toronto... Maybe I'm just paranoid. And during the Olympics I was able to watch the Canadian coverage utilizing VPN through that server. Having a server in a foreign country has lots of advantages.</p>
+  <p>Hardware - Hardware was my first love. I've tinkered with electronics as long as I can remember, I got my AS in Electronic Technology. While going to college for an EE degree, I decided I had had enough of theory and was ready to start building things. So I dropped out and joined a small company, Cisco Systems... Maybe you have heard of them?</p>
+  <p>Future Projects - I'd like to play around with freeBSD and maybe setup a web server using nginx. Also I want to setup the bookstore inventory app to use MySQL.</p>
+    <p>Free Code Camp - I heard about <a href="https://www.freecodecamp.com">Free Code Camp</a> while listening to a <a href="http://www.dailytechnewsshow.com/">DTNS</a> podcast. Sounded like a great idea.</p>
+    <p id="portfolio" class="secHeader">Portfolio ~ <a href="#top"><img src="https://www.redtailbooks.com/codeCamp/images/up.png" class="textWrapLeft" style="width: calc(3%); min-width: 15px; max-width: 25px;"></a></p>
+<div class="columnLayout">
+  <div class="col1">
+        <a href="https://www.redtailbooks.com/"><img src="https://www.redtailbooks.com/codeCamp/images/port1.png" style="display: block; margin-left: auto; margin-right: auto;"></a>
+        <p>Website for Retail bookstore. Has ~25 static pages, and takes up ~9.5Mb on the webserver. Since I reset the counter in 2014 it has gotten 2.2 million page views. The main page has a GTmetrix score of 92% and takes an average load time of 413ms. It utilizes php for server side scripting, builds pages dynamically for displaying search results, date specific info, etc... The main workhorse is when you click on any book in inventory, it goes out and gets the info to display a page dynamically for that given book. I would like to code a more verbose search capability, one that can correct for mispellings, or realize that J.A. Jance, J. A. Jance, JA Jance, J A Jance, Janet A. Jance, Janet Alvin Jance are all the same author. I don't know how to do it without using huge lookup tables, which just isn't practical... Maybe send request to google, scrape how it corrects and then use that for search term :)</p>
+  </div>
+  <div class="col2">
+           <a href="https://www.redtailbooks.com/mobile/mobile.php"><img src="https://www.redtailbooks.com/codeCamp/images/port2.png" style="display: block; margin-left: auto; margin-right: auto;"></a>
+        <p>This one is cheating a little bit, I'm showing it because my portfolio needs the padding. This is the mobile verison of the bookstore's website. The whole mobile site is 28.8K (including images) and consits of 3 static pages. It also utilizes php to build pages dynamically for search restults and displaying book info. It has a GTmetrix score of 99% and takes an average load time of 221ms</p>
+  </div>
+  <div class="col3">
+  <a href="https://www.redtailbooks.com/darby/index.php"><img src="https://www.redtailbooks.com/codeCamp/images/port3.png" style="display: block; margin-left: auto; margin-right: auto;"></a>
+  <p>I built this website as a way to share my family history research. The website it self is huge, however, all the pages are static so server side scripting was not required. There are 2,289 pages, using 13.7MB (and only 800KB of that is for images.) Setting up this website was more of a logic challenge than a coding challenge... I wrote an app that would take a GEDCOM file and create linked webpages from it. I would like to take credit for the code, but the logic was beyond me. So I borrowed pieces from multiple sources to do it...</p>
+  </div>
+</div>
+  <p id="contact" class="secHeader">Contact ~ <a href="#top"><img src="https://www.redtailbooks.com/codeCamp/images/up.png" class="textWrapLeft" style="width: calc(3%); min-width: 15px; max-width: 25px;"></a></p>
+  <ul>
+  <li>Address: <a href="https://www.google.com/maps/place/204+N+Florence+St,+Casa+Grande,+AZ+85122">204 N Florence St, Casa Grande, Az 85122</a></li>
+  <li>Phone: <a href="tel:15208360370">(520) 836-0370</a></li>
+  <li>E-mail: <a href="mailto:code@darbymail.net">code@darbymail.net</a></li>
+  <li>website: <a href="https://mypaperbacks.com">mypaperbacks.com</a></li>
+  </ul>
+  <br><br>
+</body>
